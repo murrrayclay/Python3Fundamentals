@@ -1,5 +1,11 @@
-computer_choice = 'scissors'
+import random
+
+computer_choice = random.choice(['Rock', 'Scissors', 'Paper'])
+
 user_choice = input('Do you want rock, paper or scissors?')
+
+print("okay then " + computer_choice + " vs " + user_choice)
+
 if computer_choice == user_choice:
     print('TIE')
 elif user_choice == 'rock' and computer_choice == 'scissors':
